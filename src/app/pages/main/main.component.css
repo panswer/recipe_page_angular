@@ -1,0 +1,66 @@
+.main-root {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: var(--color-neutral-eggshell);
+}
+
+.main-container {
+    margin: 0;
+    padding: 0;
+    min-width: var(--mobile-width);
+    max-width: var(--max-column-width);
+    background-color: var(--color-neutral-white);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.main-content {
+    width: 311px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.space {
+    height: 2.5rem;
+}
+
+hr {
+    border-color: var(--color-neutral-light-grey);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.ingredients,
+.steps {
+    --list-mark-color: var(--color-primary-nutmeg);
+}
+
+.steps {
+    --list-mark-weight: var(--typography-font-weight-2);
+}
+
+@media screen and (min-width: 754px) {
+    .main-root {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .main-content {
+        width: 626px;
+    }
+
+    app-image {
+        width: 626px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        overflow: hidden;
+        border-radius: 18px;
+    }
+}

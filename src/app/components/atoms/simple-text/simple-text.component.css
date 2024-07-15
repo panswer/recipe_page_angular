@@ -1,0 +1,6 @@
+p.simple-text-content{
+    font-family: var(--typography-font-name-2);
+    color: var(--color-neutral-wenge-brown);
+    margin: 0;
+    font-weight: var(--typography-font-weight-1);
+}

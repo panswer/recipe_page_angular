@@ -1,0 +1,23 @@
+ul {
+    padding-left: .5rem;
+}
+
+li {
+    font-family: var(--typography-font-name-2);
+    font-weight: var(--typography-font-weight-1);
+    color: var(--color-neutral-wenge-brown);
+    display: flex;
+    align-items: center;
+}
+
+li::before {
+    content: var(--list-mark);
+    margin-right: 1.75rem;
+    font-size: var(--list-mark-size);
+    color: var(--list-mark-color);
+    font-weight: var(--list-mark-weight);
+}
+
+li:not(:last-child) {
+    margin-bottom: 0.5rem;
+}

@@ -1,0 +1,54 @@
+<div class="main-root">
+    <div class="main-container">
+        <app-image [src]="omeletteSrc" [alt]="omeletteAlt"></app-image>
+
+        <div class="main-content">
+            <app-title>
+                Simple Omelette Recipe
+            </app-title>
+
+            <app-simple-text>
+                An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to
+                perfection, optionally filled with your choice of cheese, vegetables, or meats.
+            </app-simple-text>
+
+            <div class="space"></div>
+
+            <app-box-list [preparationTime]="preparationTime"></app-box-list>
+
+            <div class="space"></div>
+
+            <app-sub-title [type]="2">
+                Ingredients
+            </app-sub-title>
+
+            <app-list [items]="imgredients" class="ingredients"></app-list>
+
+            <hr>
+
+            <app-sub-title [type]="2">
+                Instructions
+            </app-sub-title>
+
+            <app-sort-list [items]="steps" class="steps">
+                <ng-template appListItem let-title>
+                    <b>{{title}}</b>: {{getInstructionDescription(title)}}
+                </ng-template>
+            </app-sort-list>
+
+            <hr>
+
+            <app-sub-title [type]="2">
+                Nutrition
+            </app-sub-title>
+
+            <app-simple-text>
+                The table below shows nutritional values per serving without the additional fillings.
+            </app-simple-text>
+
+            <app-table [items]="nutritionTableItems"></app-table>
+
+            <div class="space"></div>
+        </div>
+    </div>
+</div>

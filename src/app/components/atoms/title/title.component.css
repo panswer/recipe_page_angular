@@ -1,0 +1,5 @@
+h1.title {
+    font-family: var(--typography-font-name-1);
+    font-weight: var(--typography-font-weight-1);
+    color: var(--color-neutral-dark-charcoal);
+}

@@ -1,0 +1,14 @@
+.sub-title {
+    font-family: var(--typography-font-name-2);
+    color: var(--color-primary-dark-raspberry);
+    font-weight: var(--typography-font-weight-2);
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.sub-title[type="2"] {
+    color: var(--color-primary-nutmeg);
+    font-size: 1.5rem;
+    font-family: var(--typography-font-name-1);
+    font-weight: var(--typography-font-weight-1);
+}

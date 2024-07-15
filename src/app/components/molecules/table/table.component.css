@@ -1,0 +1,26 @@
+.table-container {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--typography-font-name-2);
+    color: var(--color-neutral-wenge-brown);
+}
+
+.table-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 3rem;
+    align-items: center;
+}
+
+.table-row>.table-col:first-child {
+    margin-left: 1.5rem;
+}
+
+.table-row>.table-col:last-child{
+    color: var(--color-primary-nutmeg);
+    font-weight: var(--typography-font-weight-2);
+}
+
+.table-row:not(:last-child) {
+    border-bottom: 1px solid var(--color-neutral-light-grey);
+}

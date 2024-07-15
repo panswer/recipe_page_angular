@@ -1,0 +1,13 @@
+<div class="box-list_container">
+    <app-sub-title>
+        Preparation time
+    </app-sub-title>
+
+    <app-list [items]="preparationKeys">
+        <ng-template appListItem let-key>
+            <ng-container>
+                <span><b>{{key}}</b>: {{preparationTime[key]}}</span>
+            </ng-container>
+        </ng-template>
+    </app-list>
+</div>

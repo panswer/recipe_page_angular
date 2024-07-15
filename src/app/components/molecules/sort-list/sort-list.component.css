@@ -1,0 +1,16 @@
+ol {
+    padding-left: 1.25rem;
+}
+
+li {
+    color: var(--color-neutral-wenge-brown);
+    font-family: var(--typography-font-name-2);
+    font-size: var(--typography-font-weight-1);
+    padding-left: 1.25rem;
+    margin-bottom: .5rem;
+}
+
+li::marker {
+    color: var(--list-mark-color);
+    font-weight: var(--list-mark-weight);
+}

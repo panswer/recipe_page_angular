@@ -1,5 +1,6 @@
 :root {
     --mobile-width: 375px;
+    --max-column-width: 754px;
     --desktop-width: 1440px;
 
     /* 
@@ -22,20 +23,31 @@
     /* Body Copy */
     --typography-font-size: 16px;
     /* Fonts */
-    --typography-font-name-1: "Young Serif";
-    --typography-font-name-2: "Outfit";
+    --typography-font-name-1: "young_serif";
+    --typography-font-name-2: "outfit";
     /* Weights */
     --typography-font-weight-1: 400;
-    --typography-font-weight-2: 400;
-    --typography-font-weight-3: 400;
+    --typography-font-weight-2: 600;
+    --typography-font-weight-3: 700;
+
+    /* List style */
+    --list-mark: "•";
+    --list-mark-size: 1.25rem;
+    --list-mark-weight: var(--typography-font-weight-1);
+    --list-mark-color: var(--color-primary-dark-raspberry);
+}
+
+body {
+    margin: 0;
+    padding: 0;
 }
 
 @font-face {
-    font-family: var(--typography-font-name-1);
-    src: url("./static/fonts/young-serif/YoungSerif-Regular.ttf");
+    font-family: "young_serif";
+    src: url("/static/fonts/young-serif/YoungSerif-Regular.ttf");
 }
 
 @font-face {
-    font-family: var(--typography-font-name-2);
-    src: url("./static/fonts/outfit/Outfit-VariableFont_wght.ttf");
+    font-family: "outfit";
+    src: url("/static/fonts/outfit/Outfit-VariableFont_wght.ttf");
 }

@@ -1,0 +1,9 @@
+.box-list_container {
+    background-color: var(--color-neutral-rose-white);
+    border-radius: 15px;
+    padding: 1rem 1.5rem;
+}
+
+span>b {
+    text-transform: capitalize;
+}

@@ -1,0 +1,11 @@
+<ul>
+    <li *ngFor="let item of items">
+        <ng-container *ngTemplateOutlet="itemListTemplate || defaultItem; context: {$implicit: item}"></ng-container>
+    </li>
+</ul>
+
+<ng-template #defaultItem let-item>
+    <app-simple-text>
+        {{ item }}
+    </app-simple-text>
+</ng-template>
